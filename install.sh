@@ -9,7 +9,7 @@ function askforperms
 	if [ "$perms" = "" ] || [ "$perms" = "y"  ] || [ "$perms" = "Y" ]; then
 		echo "yey"
 		mkdir -p $3
-		sudo cp -r $2/* $3
+		sudo cp -r $2/* $1
 	fi
 }
 # askforperms=$(declare -f askforperms)
@@ -76,5 +76,5 @@ for i in ${extras[@]}; do
 	# echo "$(echo $i | awk '{print $2}') to $(echo $i | awk '{print $3}')"
 	# mkdir -p "/home/$(whoami)/dottfiles/extras/${elements[2]}"
 	# cp -r -p "${elements[1]}"* "/home/$(whoami)/dottfiles/extras/${elements[2]}"
-	askforperms ${elements[2]} ${elements[1]} ${elements[0]}
+	askforperms ${elements[1]} ~/dottfiles/extras/${elements[2]} ${elements[0]}
 done
