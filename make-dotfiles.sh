@@ -27,9 +27,9 @@ function copylisted {
 	echo $'\n'
 }
 
-copylisted ~/.config/ ~/dottfiles/config ~/dottfiles/config-dirs ".config/"
+copylisted ~/.config/ ~/dottfiles/.config ~/dottfiles/config-dirs ".config/"
 copylisted /usr/share/themes/ ~/dottfiles/themes ~/dottfiles/themes-tcp "themes/"
-copylisted /usr/share/icons/ ~/dottfiles/icon-themes ~/dottfiles/icon-themes-tcp "icons/"
+copylisted /usr/share/icons/ ~/dottfiles/icons ~/dottfiles/icon-themes-tcp "icons/"
 
 rm -rf ~/dottfiles/extras/*
 
