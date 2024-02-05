@@ -22,7 +22,7 @@ require("plugins").setup()
 
 vim.cmd("set relativenumber splitright splitbelow")
 vim.cmd("colorscheme catppuccin-frappe")
-vim.cmd("hi Normal ctermbg=NONE guibg=NONE")
+-- vim.cmd("hi Normal ctermbg=NONE guibg=NONE")
 vim.cmd("set shiftwidth=4 smarttab tabstop=4")
 
 vim.keymap.set("n", "<leader>e", function()

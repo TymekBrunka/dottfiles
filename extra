@@ -1,3 +1,4 @@
 nvim-plugins-file;~/.local/share/nvim/lazy/lazy.nvim/lua/plugins/;nvim/plugins/|
 nvim-lsp-setup-file;~/.local/share/nvim/lazy/lazy.nvim/lua/lsp-setup/;nvim/lsp-setup/|
-script-folder;~/scripts/;scripts
+script-folder;~/scripts/;scripts|
+dwm-setup;~/.dwm/;dwm
