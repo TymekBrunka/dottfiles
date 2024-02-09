@@ -8,8 +8,8 @@ function askforperms
 	read -p "${yellow}Can I copy ${blue}$2 ${green}($3)${yellow} to ${blue}$1${yellow} ? (Y/n): ${reset}" perms
 	if [ "$perms" = "" ] || [ "$perms" = "y"  ] || [ "$perms" = "Y" ]; then
 		echo "yey"
-		mkdir -p $3
-		sudo cp -r $2/* $1
+		sudo mkdir -p $3
+		sudo cp -r $2* $1
 	fi
 }
 # askforperms=$(declare -f askforperms)
